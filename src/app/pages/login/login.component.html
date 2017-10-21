@@ -1,3 +1,50 @@
-<p>
-  login works!
-</p>
+<div id="login" class="container">
+
+
+    <form  id="login__form" class="container">
+
+        <!-- <div class="container form__item">
+            <label for="username">Username</label>
+            <input [(ngModel)]="user.username"
+                id="username"
+                type="text"
+                required/>
+            TODO: Remove this: {{ user.username }}
+        </div>
+
+        <div class="container form__item">
+            <label for="password">Password</label>
+            <input [(ngModel)]="user.password"
+                id="password"
+                type="password"
+                required/>
+            TODO: Remove this: {{ user.password }}
+        </div> -->
+
+        {{user}}
+
+
+        <div class="container form__item">
+            <label for="username">Username</label>
+            <input [(ngModel)]="username"
+                name="username"
+                type="text"
+                required
+                #spy/>
+                TODO: Remove this: {{ spy.className }}
+        </div>
+
+        <div class="container form__item">
+            <label for="password">Password</label>
+            <input [(ngModel)]="password"
+                name="password"
+                type="password"
+                required/>
+                TODO: Remove this: {{ password }}
+        </div>
+
+        <button (click)="validateLogin()" type="submit">Enter</button>
+
+    </form>
+
+</div>

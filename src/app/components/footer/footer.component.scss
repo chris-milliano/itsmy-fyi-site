@@ -1,0 +1,19 @@
+@import "../../../variables.scss";
+
+footer {
+    background-color: $dk-gry;
+    padding: 2vh 1vw;
+
+    h1 {
+        color: $blue;
+    }
+
+    h6 {
+        color: $main-green;
+    }
+}
+
+.footer--to-bottom {
+    position: absolute;
+    bottom: 0;
+}
