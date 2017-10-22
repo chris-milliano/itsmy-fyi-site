@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-export class User {
-    username: string = "bob";
-    password: string = "seceret123";
-
-
-    User(username, password) {
-        this.username = username;
-        this.password = password;
-    }
-}
+// export class User {
+//     username: string = "bob";
+//     password: string = "seceret123";
+//
+//
+//     User(username, password) {
+//         this.username = username;
+//         this.password = password;
+//     }
+// }
 
 @Component({
     selector: 'app-login',
@@ -20,19 +20,19 @@ export class User {
 
 export class LoginComponent implements OnInit {
 
-    //
-    user: User;
+    // //
+    // user: User;
 
     constructor() { }
 
     ngOnInit() {
-        console.log("user:", this.user);
+        console.log("Init login.component");
     }
 
 
-    //
-    validateLogin() {
-        console.log("Check-in", this.user);
-    }
+    // //
+    // validateLogin() {
+    //     console.log("Check-in", this.user);
+    // }
 
 }
