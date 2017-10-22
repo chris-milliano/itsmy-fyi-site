@@ -19,13 +19,24 @@
 
             <h1 id="what__title">WHAT WE DO:</h1>
 
+            <h2 class="what__subtitle">
+                We provide you with a free and easy to setup webpage
+            </h2>
+            <h3 class="what__subtitle">
+                We want to get your name out there, while you build your reputation
+                to a point where you can justify the time and money that building
+                a full website requires
+            </h3>
 
 
             <div id="what__page-layout" class="container">
 
-                <div class="page-layout__item page-layout__image"></div>
+                <div class="page-layout__item page-layout__image"
+                    (click)="updateSelectedSection('image')">
+                </div>
 
-                <div class="page-layout__item page-layout__info">
+                <div class="page-layout__item page-layout__info"
+                    (click)="updateSelectedSection('about')">
                     <div id="info__name" class="container">Jake Avery</div>
                     <div id="info__title" class="container">Graphic Designer</div>
                     <div id="info__text" class="container">
@@ -33,7 +44,8 @@
                     </div>
                 </div>
 
-                <div class="page-layout__item page-layout__social">
+                <div class="page-layout__item page-layout__social"
+                    (click)="updateSelectedSection('social')">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -68,9 +80,10 @@
                     </span>
                 </div>
 
-                <div class="page-layout__item page-layout__contact">
+                <div class="page-layout__item page-layout__contact"
+                    (click)="updateSelectedSection('cta')">
                     <div id="contact__cta-button" class="container">
-                        CTA
+                        CTA Button
                     </div>
                 </div>
 
@@ -80,11 +93,59 @@
 
 
             <div id="what__section-info" class="container">
-                <h3>IMAGE</h3>
-                <p>
-                    An image is a key to your success. People feel more comfortable
-                    when they can put a face to the name.
-                </p>
+
+                <div [ngClass]="{ 'section-info__text--show' : selectedSection == 'default' }"
+                    class="container section-info__text">
+                    <h3>CHECK IT OUT</h3>
+                    <p>
+                        Click around above to learn more about the importance of
+                        each section!
+                    </p>
+                </div>
+                <div [ngClass]="{ 'section-info__text--show' : selectedSection == 'image' }"
+                    class="container section-info__text">
+                    <h3>IMAGE</h3>
+                    <p>
+                        An image is a key to your success. People feel more comfortable
+                        when they can put a face to the name.
+                    </p>
+                </div>
+                <div [ngClass]="{ 'section-info__text--show' : selectedSection == 'about' }"
+                    class="container section-info__text">
+                    <h3>ABOUT</h3>
+                    <p>
+                        It should come as no surprise that one of the most
+                        important pages on any website is the About section.
+                        This where you get the chance to explain your mission:
+                        who you are, what you do, and why you do it.
+                    </p>
+                </div>
+                <div [ngClass]="{ 'section-info__text--show' : selectedSection == 'social' }"
+                    class="container section-info__text">
+                    <h3>SOCIAL</h3>
+                    <p>
+                        Social is quickly growing as the king of all marketing
+                        options. Some major compaines are going so far as to
+                        redirect their entire marketing budgets into social
+                        content creatition and outreach.
+                    </p>
+                </div>
+                <div [ngClass]="{ 'section-info__text--show' : selectedSection == 'cta' }"
+                    class="container section-info__text">
+                    <h3>CALL TO ACTION (CTA)</h3>
+                    <p>
+                        A CTA is the entire purpose of maintaining a webpage.
+                        You have told them who you are, now it is time to ask
+                        for the "sale".
+                    </p>
+                    <p>
+                        Whether you are directing your users to an online store,
+                        having them request a quote, inviting them to a concert,
+                        or just telling them where they can keep up with you,
+                        this is your oppritunity to do so.
+                    </p>
+                </div>
+
             </div>
 
         </div>

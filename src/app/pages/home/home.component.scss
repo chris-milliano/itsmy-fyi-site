@@ -46,6 +46,14 @@
                 color: $main-green;
             }
 
+            .what__subtitle {
+                width: 70%;
+                max-width: 600px;
+                margin: 3vh auto;
+                text-align: center;
+                color: #fff;
+            }
+
             #what__page-layout {
                 width: 90vw;
                 max-width: 800px;
@@ -145,6 +153,15 @@
                 text-align: center;
                 color: #fff;
                 background-color: $main-green;
+
+                .section-info__text {
+                    height: 0;
+                    transition: all 1s ease;
+                }
+
+                .section-info__text--show {
+                    height: auto;
+                }
             }
         }
     }
