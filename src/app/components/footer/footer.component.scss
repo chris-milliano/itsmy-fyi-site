@@ -4,13 +4,42 @@ footer {
     background-color: $dk-gry;
     padding: 2vh 1vw;
 
-    h1 {
-        color: $blue;
+    // h1 {
+    //     color: $blue;
+    // }
+    //
+    // h6 {
+    //     color: $main-green;
+    // }
+
+    #footer__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fa-stack {
+            margin: 1vh 10px;
+
+            &:hover {
+                .fa-circle { color: $main-green; }
+                .fa-inverse { color: $dk-gry; }
+            }
+
+            .fa-circle {
+                color: $blue;
+                transition: all 1s ease;
+            }
+
+            .fa-inverse {
+                color: #fff;
+                transition: all 1s ease;
+            }
+        }
+
+
     }
 
-    h6 {
-        color: $main-green;
-    }
+
 }
 
 .footer--to-bottom {
