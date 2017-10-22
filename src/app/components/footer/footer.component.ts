@@ -16,21 +16,21 @@ export class FooterComponent implements OnInit {
     ngOnInit() {
         console.log("Init footer");
 
-        this.footerToBottomCheck();
+        // this.footerToBottomCheck();
     }
 
 
+    // //
+    // footerToBottomCheck() {
+    //     console.log("run floorFooter()");
     //
-    footerToBottomCheck() {
-        console.log("run floorFooter()");
-
-        let footer = document.getElementById('footer');
-        console.log("footer", footer);
-
-        if ( screen.height - footer.getBoundingClientRect().bottom  > 0) {
-            console.log("add class");
-            this.footerToBottomClass = true;
-        }
-    }
+    //     let footer = document.getElementById('footer');
+    //     console.log("footer", footer);
+    //
+    //     if ( screen.height - footer.getBoundingClientRect().bottom  > 0) {
+    //         console.log("add class");
+    //         this.footerToBottomClass = true;
+    //     }
+    // }
 
 }

@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     position: relative;
     margin: 0 auto;
-    font-family: 'Lato', Helvetica; 
+    font-family: 'Lato', Helvetica;
 }
 
 .container {
@@ -11,4 +11,25 @@ body {
     width: 100%;
     margin: 0 auto;
     overflow-y: auto;
+}
+
+.cta-button {
+    font-size: 20px;
+    width: 90%;
+    max-width: 250px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 4px 5px 12px -1px #4d4d4d;
+    margin: 2vh auto;
+    padding: 1vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: none;
+        transform: scale(.9);
+    }
 }
