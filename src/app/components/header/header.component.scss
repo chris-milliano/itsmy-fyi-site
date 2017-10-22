@@ -3,4 +3,13 @@
 header {
     background-color: $main-green;
     padding: 2vh 1vw;
+
+    #header__title {
+        color: #fff;
+        transition: all 1s ease;
+
+        &:hover {
+            color: $blue;
+        }
+    }
 }
