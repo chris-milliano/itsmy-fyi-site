@@ -1,5 +1,15 @@
 @import "../../../variables.scss";
 
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: .5; }
+    100% { opacity: 1; }
+}
+
+.pulse-animation {
+    animation: pulse 2s .5s ease infinite;
+}
+
 #home {
 
     #home--intro {

@@ -92,7 +92,9 @@
 
 
 
-            <div id="what__section-info" class="container">
+            <div id="what__section-info"
+                class="container"
+                [ngClass]="{ 'pulse-animation': !hasSectionBeenClicked }">
 
                 <div [ngClass]="{ 'section-info__text--show' : selectedSection == 'default' }"
                     class="container section-info__text">

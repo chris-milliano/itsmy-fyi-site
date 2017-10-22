@@ -10,8 +10,9 @@ import { Router } from '@angular/router';
 
 export class HomeComponent implements OnInit {
 
-    // Hold display text variable
+    // Hold display text vars
     selectedSection: string = "default";
+    hasSectionBeenClicked: boolean = false;
 
 
     constructor(
@@ -25,7 +26,7 @@ export class HomeComponent implements OnInit {
 
     // Change out the text to explain the section the user selected
     updateSelectedSection(optionSelected: string) {
-        console.log("SELECT: ", optionSelected);
+        if (this.hasSectionBeenClicked == false) { this.hasSectionBeenClicked = true }
         this.selectedSection = optionSelected;
     }
 
